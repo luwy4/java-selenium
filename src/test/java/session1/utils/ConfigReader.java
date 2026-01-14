@@ -9,10 +9,7 @@ public class ConfigReader {
 
     static {
         try {
-            InputStream input =
-                    ConfigReader.class
-                            .getClassLoader()
-                            .getResourceAsStream("config.properties");
+            InputStream input = ConfigReader.class.getClassLoader().getResourceAsStream("config.properties");
 
             properties.load(input);
         } catch (Exception e) {
