@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0bc54a2d-e3e1-4ecb-9959-fb3f37891241" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/session1/ exercise-1/1-maven-setup/tests/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/session1/ exercise1/test/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +18,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="38AI4zySMxEKeOV6j0kYFSkN9TB" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -29,12 +33,51 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.ElementLocatorTest.executor": "Run",
     "TestNG.FirstTest.executor": "Run",
     "git-widget-placeholder": "feature/session1-maven-setup",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Admin/Desktop/Selenium-training/java-selenium/src/main/java/org/example/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/Admin/Desktop/Selenium-training/java-selenium/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Selenium-training\java-selenium\src\test\java\session1\ exercise_1_2\base" />
+      <recent name="C:\Users\Admin\Desktop\Selenium-training\java-selenium\src\test\java\session1\ exercise_1_2\locators\ tests" />
+      <recent name="C:\Users\Admin\Desktop\Selenium-training\java-selenium\src\test\java\session1\ exercise_1_2\locators" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ElementLocatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session1.exercise1_2.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session1.exercise_1_2.tests" />
+      <option name="MAIN_CLASS_NAME" value="session1.exercise1_2.tests.ElementLocatorTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.ElementLocatorTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
