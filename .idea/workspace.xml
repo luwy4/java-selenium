@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc54a2d-e3e1-4ecb-9959-fb3f37891241" name="Changes" comment="" />
+    <list default="true" id="0bc54a2d-e3e1-4ecb-9959-fb3f37891241" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/session1/ exercise-1/1-maven-setup/tests/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/FirstTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +16,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="38AI4zySMxEKeOV6j0kYFSkN9TB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,6 +29,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "TestNG.FirstTest.executor": "Run",
     "git-widget-placeholder": "feature/session1-maven-setup",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/Admin/Desktop/Selenium-training/java-selenium/src/main/java/org/example/Main.java"

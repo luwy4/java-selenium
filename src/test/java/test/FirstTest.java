@@ -1,4 +1,4 @@
-package tests;
+package test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +12,7 @@ public class FirstTest {
 
         Properties prop = new Properties();
         FileInputStream fis =
-                new FileInputStream("src/test/java/tests/config.properties");
+                new FileInputStream("src/test/resources/config.properties");;
         prop.load(fis);
 
         String browser = prop.getProperty("browser");
