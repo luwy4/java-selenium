@@ -6,13 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="0bc54a2d-e3e1-4ecb-9959-fb3f37891241" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/session1/exercise1_2/locators/ElementLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/session1/exercise1_2/locators/ElementLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/session1/exercise1_2/tests/ElementLocatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/session1/exercise1_2/tests/ElementLocatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,6 +41,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.ElementLocatorTest.executor": "Run",
     "TestNG.FirstTest.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.testHandleMultipleTabs.executor": "Run",
+    "TestNG.LoginTest.testLoginAndHandleTabs.executor": "Run",
+    "TestNG.LoginTest.testLoginSuccess.executor": "Run",
     "git-widget-placeholder": "feature/week1-day3-4-locators",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/Admin/Desktop/Selenium-training/java-selenium/src/main/java/org/example/Main.java",
@@ -53,7 +63,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.LoginTest.testLoginAndHandleTabs">
     <configuration name="ElementLocatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-selenium" />
       <extension name="coverage">
@@ -71,8 +81,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session1.exercise1_3.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session1.exercise1_3.tests" />
+      <option name="MAIN_CLASS_NAME" value="session1.exercise1_3.tests.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.testHandleMultipleTabs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session1.exercise1_3.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session1.exercise1_3.tests" />
+      <option name="MAIN_CLASS_NAME" value="session1.exercise1_3.tests.LoginTest" />
+      <option name="METHOD_NAME" value="testHandleMultipleTabs" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.testLoginAndHandleTabs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session1.exercise1_3.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session1.exercise1_3.tests" />
+      <option name="MAIN_CLASS_NAME" value="session1.exercise1_3.tests.LoginTest" />
+      <option name="METHOD_NAME" value="testLoginAndHandleTabs" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.testLoginSuccess" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session1.exercise1_3.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session1.exercise1_3.tests" />
+      <option name="MAIN_CLASS_NAME" value="session1.exercise1_3.tests.LoginTest" />
+      <option name="METHOD_NAME" value="testLoginSuccess" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.testLoginAndHandleTabs" />
+        <item itemvalue="TestNG.LoginTest.testHandleMultipleTabs" />
+        <item itemvalue="TestNG.LoginTest.testLoginSuccess" />
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.ElementLocatorTest" />
       </list>
     </recent_temporary>
@@ -101,6 +186,15 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/session1/exercise1_3/tests/LoginTest.java</url>
+          <line>13</line>
+          <properties class="session1.exercise1_3.tests.LoginTest" method="testLoginAndHandleTabs">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
