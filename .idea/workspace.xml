@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0bc54a2d-e3e1-4ecb-9959-fb3f37891241" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/session1/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/session1/utils/ConfigReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,13 +40,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "TestNG.DynamicLoadingTest.executor": "Run",
     "TestNG.ElementLocatorTest.executor": "Run",
     "TestNG.FirstTest.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
     "TestNG.LoginTest.testHandleMultipleTabs.executor": "Run",
     "TestNG.LoginTest.testLoginAndHandleTabs.executor": "Run",
     "TestNG.LoginTest.testLoginSuccess.executor": "Run",
-    "git-widget-placeholder": "feature/week1-day3-4-locators",
+    "git-widget-placeholder": "feature/week__1__day__7__wait__strategies",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/Admin/Desktop/Selenium-training/java-selenium/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Project",
@@ -63,17 +65,17 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.testLoginAndHandleTabs">
-    <configuration name="ElementLocatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DynamicLoadingTest">
+    <configuration name="DynamicLoadingTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-selenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="session1.exercise1_2.tests.*" />
+          <option name="PATTERN" value="session1.exercise1_4.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="session1.exercise_1_2.tests" />
-      <option name="MAIN_CLASS_NAME" value="session1.exercise1_2.tests.ElementLocatorTest" />
+      <option name="PACKAGE_NAME" value="session1.exercise1_4.tests" />
+      <option name="MAIN_CLASS_NAME" value="session1.exercise1_4.tests.DynamicLoadingTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -154,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DynamicLoadingTest" />
         <item itemvalue="TestNG.LoginTest.testLoginAndHandleTabs" />
         <item itemvalue="TestNG.LoginTest.testHandleMultipleTabs" />
         <item itemvalue="TestNG.LoginTest.testLoginSuccess" />
         <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.ElementLocatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +188,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/session1/exercise1_4/tests/DynamicLoadingTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/session1/exercise1_4/tests/DynamicLoadingTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/session1/exercise1_3/tests/LoginTest.java</url>
