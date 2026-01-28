@@ -10,7 +10,20 @@ import session1.utils.WindowUtils;
 
 public class LoginTest extends BaseTest {
 
-    @Test
+    @Test(priority = 1)
+    public void testInvalidLogin() {
+        LoginPage loginPage = new LoginPage(driver);
+        driver.get(ConfigReader.get("url1.3"));
+
+        loginPage.login(ConfigReader.get("invalid_username"), ConfigReader.get("invalid_password"));
+
+        String actualError = loginPage.getErrorMessage();
+        String expectedError = ConfigReader.get("expected_error_message");
+
+        Assert.assertTrue(actualError.contains(expectedError), "Error message mismatch! Expected to find: " + expectedError);
+    }
+
+    @Test(priority = 2)
     public void testLoginAndHandleTabs() {
         LoginPage loginPage = new LoginPage(driver);
         driver.get(ConfigReader.get("url1.3"));

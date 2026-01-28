@@ -1,6 +1,7 @@
 package session1.exercise1_3.pages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import session1.exercise1_3.locators.LoginLocators;
@@ -18,11 +19,14 @@ public class LoginPage {
     }
 
     public void enterUsername(String user) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.USERNAME_FIELD)).sendKeys(user);
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.USERNAME_FIELD));
+        element.clear();
+        element.sendKeys(user);
     }
-
     public void enterPassword(String pass) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.PASSWORD_FIELD)).sendKeys(pass);
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.PASSWORD_FIELD));
+        element.clear();
+        element.sendKeys(pass);
     }
 
     public void clickSubmit() {
@@ -39,5 +43,7 @@ public class LoginPage {
         enterPassword(pass);
         clickSubmit();
     }
-
+    public String getErrorMessage() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.ERROR_MESSAGE)).getText();
+    }
 }
