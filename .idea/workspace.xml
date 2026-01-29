@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0bc54a2d-e3e1-4ecb-9959-fb3f37891241" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/session1/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/session1/utils/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/session1/exercise1_2/locators/ElementLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/session1/exercise1_2/locators/ElementLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/session1/exercise1_2/tests/ElementLocatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/session1/exercise1_2/tests/ElementLocatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,27 +37,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.DynamicLoadingTest.executor": "Run",
-    "TestNG.ElementLocatorTest.executor": "Run",
-    "TestNG.FirstTest.executor": "Run",
-    "TestNG.LoginTest.executor": "Run",
-    "TestNG.LoginTest.testHandleMultipleTabs.executor": "Run",
-    "TestNG.LoginTest.testLoginAndHandleTabs.executor": "Run",
-    "TestNG.LoginTest.testLoginSuccess.executor": "Run",
-    "git-widget-placeholder": "feature/week__1__day__7__wait__strategies",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Admin/Desktop/Selenium-training/java-selenium/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.DynamicLoadingTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ElementLocatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FirstTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.testHandleMultipleTabs.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.testLoginAndHandleTabs.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.testLoginSuccess.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/week__1__day__7__wait__strategies&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Admin/Desktop/Selenium-training/java-selenium/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\Selenium-training\java-selenium\src\test\java\session1\ exercise_1_2\base" />
@@ -65,7 +68,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DynamicLoadingTest">
+  <component name="RunManager" selected="TestNG.ElementLocatorTest">
     <configuration name="DynamicLoadingTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-selenium" />
       <extension name="coverage">
@@ -83,16 +86,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ElementLocatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-selenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="session1.exercise1_3.tests.*" />
+          <option name="PATTERN" value="session1.exercise1_2.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="session1.exercise1_3.tests" />
-      <option name="MAIN_CLASS_NAME" value="session1.exercise1_3.tests.LoginTest" />
+      <option name="PACKAGE_NAME" value="session1.exercise1_2.tests" />
+      <option name="MAIN_CLASS_NAME" value="session1.exercise1_2.tests.ElementLocatorTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -156,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ElementLocatorTest" />
         <item itemvalue="TestNG.DynamicLoadingTest" />
         <item itemvalue="TestNG.LoginTest.testLoginAndHandleTabs" />
         <item itemvalue="TestNG.LoginTest.testHandleMultipleTabs" />
         <item itemvalue="TestNG.LoginTest.testLoginSuccess" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
