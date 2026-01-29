@@ -22,7 +22,7 @@ jobs:
           cache: "maven"
 
       - name: Stage 1 - Run Linting (Checkstyle)
-        run: mvn checkstyle:check -f java-selenium/pom.xml
+        run: mvn checkstyle:check
 
       - name: Stage 2 - Run Automated Tests
-        run: mvn test -f java-selenium/pom.xml
+        run: mvn test
