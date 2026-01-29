@@ -3,6 +3,7 @@ package session1.exercise2_3.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import session1.exercise2_3.base.BasePage;
 
 public class LoginPage extends BasePage {
@@ -23,30 +24,33 @@ public class LoginPage extends BasePage {
     @FindBy(id = "error")
     private WebElement errorMessage;
 
-    public void enterUsername(String user) {
-        type(usernameField, user);
+    public LoginPage enterUsername(String input) {
+        wait.until(ExpectedConditions.visibilityOf(usernameField));
+        usernameField.clear();
+        usernameField.sendKeys(input);
+        return this;
     }
 
-    public void enterPassword(String pass) {
-        type(passwordField, pass);
+    public LoginPage enterPassword(String input) {
+        wait.until(ExpectedConditions.visibilityOf(passwordField));
+        passwordField.clear();
+        passwordField.sendKeys(input);
+        return this;
     }
 
-    public void clickSubmit() {
-        click(submitButton);
-    }
-
-    public void login(String user, String pass) {
-        enterUsername(user);
-        enterPassword(pass);
-        clickSubmit();
-    }
-
-    public SuccessPage loginSuccessfully(String user, String pass) {
-        login(user, pass);
+    public SuccessPage clickSubmit() {
+        wait.until(ExpectedConditions.elementToBeClickable(submitButton)).click();
         return new SuccessPage(driver);
     }
 
+    public SuccessPage login(String user, String pass) {
+        return enterUsername(user)
+                .enterPassword(pass)
+                .clickSubmit();
+    }
+
     public String getErrorMessage() {
-        return getText(errorMessage);
+        wait.until(ExpectedConditions.visibilityOf(errorMessage));
+        return errorMessage.getText();
     }
 }

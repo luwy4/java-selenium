@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
         driver.get(ConfigReader.get("url1.3"));
 
         LoginPage loginPage = new LoginPage(driver);
-        SuccessPage successPage = loginPage.loginSuccessfully(ConfigReader.get("username"), ConfigReader.get("password"));
+        SuccessPage successPage = loginPage.login(ConfigReader.get("username"), ConfigReader.get("password"));
 
         Assert.assertEquals(successPage.getSuccessText(), ConfigReader.get("expectedSuccessMessage"));
 
