@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Selenium-training.iml" filepath="$PROJECT_DIR$/.idea/Selenium-training.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-selenium/exercise1.iml" filepath="$PROJECT_DIR$/java-selenium/exercise1.iml" />
     </modules>
   </component>
 </project>

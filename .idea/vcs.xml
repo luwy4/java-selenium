@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$/java-selenium" vcs="Git" />
+=======
+>>>>>>> f5e61bcced4dba4835ed3ed2a82495f2bea8bf86
   </component>
 </project>
