@@ -8,12 +8,12 @@ import java.time.Duration;
 
 public class JavaScriptAlertPage {
 
-    WebDriver driver;
-    WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
 
     public JavaScriptAlertPage(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     private By jsAlertBtn = By.xpath("//button[text()='Click for JS Alert']");
@@ -21,38 +21,41 @@ public class JavaScriptAlertPage {
     private By jsPromptBtn = By.xpath("//button[text()='Click for JS Prompt']");
     private By result = By.id("result");
 
+
     public void clickJSAlert() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(jsAlertBtn));
-        driver.findElement(jsAlertBtn).click();
+        wait.until(ExpectedConditions.elementToBeClickable(jsAlertBtn)).click();
     }
 
     public void clickJSConfirm() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(jsConfirmBtn));
-        driver.findElement(jsConfirmBtn).click();
+        wait.until(ExpectedConditions.elementToBeClickable(jsConfirmBtn)).click();
     }
 
     public void clickJSPrompt() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(jsPromptBtn));
-        driver.findElement(jsPromptBtn).click();
+        wait.until(ExpectedConditions.elementToBeClickable(jsPromptBtn)).click();
     }
 
-    public void acceptAlert() {
-        wait.until(ExpectedConditions.alertIsPresent());
-        driver.switchTo().alert().accept();
-    }
 
-    public void dismissAlert() {
-        wait.until(ExpectedConditions.alertIsPresent());
-        driver.switchTo().alert().dismiss();
-    }
+    public void handleAlert(String action, String text) {
 
-    public void sendKeysAlert(String text) {
         wait.until(ExpectedConditions.alertIsPresent());
+
         Alert alert = driver.switchTo().alert();
-        alert.sendKeys(text);
+
+        if (text != null) {
+            alert.sendKeys(text);
+        }
+
+        if (action.equalsIgnoreCase("accept")) {
+            alert.accept();
+        } else {
+            alert.dismiss();
+        }
     }
+
 
     public String getResultText() {
-        return driver.findElement(result).getText();
+        return wait.until(
+                ExpectedConditions.visibilityOfElementLocated(result)
+        ).getText();
     }
 }
