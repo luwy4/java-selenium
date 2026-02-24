@@ -22,7 +22,6 @@ public class LoginPage {
         element.clear();
         element.sendKeys(user);
     }
-
     public void enterPassword(String pass) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.PASSWORD_FIELD));
         element.clear();
