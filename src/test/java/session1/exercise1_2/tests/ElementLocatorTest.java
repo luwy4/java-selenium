@@ -5,30 +5,48 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 import base.BaseTest;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import session1.exercise1_2.locators.ElementLocators;
 import session1.utils.ConfigReader;
 
+import java.time.Duration;
+
 public class ElementLocatorTest extends BaseTest {
+
     @Test
     public void verifyLocatorStrategies() {
         driver.get(ConfigReader.get("url2"));
 
-        WebElement menu = driver.findElement(By.xpath(String.format(ElementLocators.DYNAMIC_MENU, ConfigReader.get("menu_text"))));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        WebElement menu = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(String.format(ElementLocators.MENU_ITEM, ConfigReader.get("menu_text")))));
         menu.click();
 
-        driver.findElement(ElementLocators.ID_NAME).sendKeys(ConfigReader.get("user_name"));
-        driver.findElement(ElementLocators.ID_EMAIL).sendKeys(ConfigReader.get("user_email"));
-        driver.findElement(ElementLocators.ID_CURRENT_ADDR).sendKeys(ConfigReader.get("current_addr"));
-        driver.findElement(ElementLocators.ID_PERMANENT_ADDR).sendKeys(ConfigReader.get("permanent_addr"));
 
-        WebElement btnSubmit = driver.findElement(ElementLocators.BTN_SUBMIT);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format(ElementLocators.ID, "userName"))));
+
+        getElement(ElementLocators.ID, "userName").sendKeys(ConfigReader.get("user_name"));
+        getElement(ElementLocators.ID, "userEmail").sendKeys(ConfigReader.get("user_email"));
+        getElement(ElementLocators.ID, "currentAddress").sendKeys(ConfigReader.get("current_addr"));
+        getElement(ElementLocators.ID, "permanentAddress").sendKeys(ConfigReader.get("permanent_addr"));
+
+        WebElement btnSubmit = getElement(ElementLocators.BTN_BY_TEXT, ConfigReader.get("btn_submit"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", btnSubmit);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btnSubmit);
 
-        driver.findElement(ElementLocators.XPATH_LABEL_NAME).isDisplayed();
-        driver.findElement(ElementLocators.CSS_OUTPUT_NAME).isDisplayed();
-        driver.findElement(ElementLocators.CSS_OUTPUT_EMAIL).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(ElementLocators.CLASS_OUTPUT_BOX)));
 
-        findElement(ElementLocators.DYNAMIC_OUTPUT, "currentAddress").isDisplayed();
-        findElement(ElementLocators.DYNAMIC_OUTPUT, "permanentAddress").isDisplayed();
+        getElement(ElementLocators.LABEL_BY_TEXT, ConfigReader.get("label_full_name")).isDisplayed();
+        getElement(ElementLocators.OUTPUT_FIELD, "name").isDisplayed();
+        getElement(ElementLocators.OUTPUT_FIELD, "email").isDisplayed();
+    }
+
+    private WebElement getElement(String locator, String value) {
+        String formatted = String.format(locator, value);
+        if (formatted.startsWith("//") || formatted.startsWith("(//")) {
+            return driver.findElement(By.xpath(formatted));
+        }
+        return driver.findElement(By.cssSelector(formatted));
     }
 }

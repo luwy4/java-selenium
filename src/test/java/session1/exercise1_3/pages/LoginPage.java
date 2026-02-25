@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import session1.exercise1_3.locators.LoginLocators;
 
 import java.time.Duration;
-import java.util.Set;
 
 public class LoginPage {
     private WebDriver driver;
@@ -31,19 +30,19 @@ public class LoginPage {
 
     public void clickSubmit() {
         wait.until(ExpectedConditions.elementToBeClickable(LoginLocators.SUBMIT_BUTTON)).click();
-
     }
 
     public String getSuccessMessage() {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.SUCCESS_MESSAGE)).getText();
     }
 
+    public String getErrorMessage() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.ERROR_MESSAGE)).getText();
+    }
+
     public void login(String user, String pass) {
         enterUsername(user);
         enterPassword(pass);
         clickSubmit();
-    }
-    public String getErrorMessage() {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(LoginLocators.ERROR_MESSAGE)).getText();
     }
 }
