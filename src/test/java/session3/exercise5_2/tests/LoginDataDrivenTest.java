@@ -1,26 +1,12 @@
 package session3.exercise5_2.tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import base.BaseTest;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import session3.exercise5_2.data.LoginDataProvider;
 import session3.exercise5_2.pages.LoginPage;
 
-import java.time.Duration;
-
-public class LoginDataDrivenTest {
-
-    private WebDriver driver;
-
-    @BeforeMethod
-    public void setUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-    }
+public class LoginDataDrivenTest extends BaseTest {
 
     @Test(dataProvider = "loginData", dataProviderClass = LoginDataProvider.class)
     public void testLoginWithInlineData(String username, String password, boolean expected) {
@@ -34,10 +20,4 @@ public class LoginDataDrivenTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
 }

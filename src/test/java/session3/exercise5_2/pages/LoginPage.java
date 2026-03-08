@@ -5,6 +5,7 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import session3.exercise5_1.utils.ConfigReader;
 
 import java.time.Duration;
 
@@ -24,7 +25,7 @@ public class LoginPage {
     }
 
     public LoginPage open() {
-        driver.get("https://practicetestautomation.com/practice-test-login/");
+        driver.get(ConfigReader.getProperty("url5.2"));
         return this;
     }
 
